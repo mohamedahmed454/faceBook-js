@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>facebook</title>
+</head>
+<body>
+  <div class="page">
+    <nav>
+      <h3>Join Facebook</h3>
+    </nav>
+    <div>
+      <span id="error"></span>
+      <div class="form">
+         <form onsubmit="return formvalidate()" novalidate>
+          <div class="txt">
+            <input type="text" placeholder="first name" id="firstName">
+            <input type="text" placeholder="family name" id="familyName">
+          </div>
+          <div class="date">
+            <input type="number" placeholder="today" id="today">
+            <input type="number" placeholder="the month" id="the month">
+            <input type="number" placeholder="the year" id="the year">
+          </div>
+          <div class="phone">
+            <input type="tel" placeholder="phone number" id="phoneNumber">
+          </div>
+          <div class="gender">
+            <input id="male" type="radio" name="gender" required>
+            <label for="male">male</label>
+            <input id="feminine" type="radio" name="gender">
+            <label for="feminine">feminine</label>
+          </div>
+          <div class="email">
+            <input type="email" placeholder="e-mail" id="email">
+          </div>
+          <div class="pass">
+            <input type="password" placeholder="new password" id="newPassword">
+            <input type="password" placeholder="confirm password" id="confirmPassword">
+          </div>
+          <div class="send">
+            <input type="submit" value="Send">
+          </div>
+         </form>
+      </div>
+    </div>
+      
+  </div>
+ 
+  <script src="main.js"></script>
+</body>
+</html>
